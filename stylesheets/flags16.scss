@@ -2,6 +2,16 @@ $flags-images-path: "../images" !default; //Override this variable in your .scss
 .f16 {
 
     .flag{background:url(#{$flags-images-path}/flags16.png) no-repeat;}
+    
+    i, span {
+        &.flag {
+            width: 16px;
+            height: 13px;
+            position: relative;
+            display: inline-block;
+            margin-right:5px;
+        }
+    }
 
     ._African_Union{background-position:0 -16px;}
     ._Arab_League{background-position:0 -32px;}
